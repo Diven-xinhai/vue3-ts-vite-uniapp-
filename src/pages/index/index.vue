@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { getGoodsList } from '@/api/home'
+// import { getGoodsList } from '@/api/home'
 interface TabList {
   value: number
   label: string
@@ -26,12 +26,12 @@ const goPath = (item: TabList) => {
 
 <style lang="scss" scoped>
 .index {
-  padding: 25rpx;
+  padding: 25upx;
   .tab-list {
     width: 25%;
-    padding: 25rpx;
-    border-radius: 15rpx;
-    box-shadow: 0 0 10rpx #ccc;
+    padding: 25upx;
+    border-radius: 15upx;
+    box-shadow: 0 0 10upx #ccc;
     display: flex;
     justify-content: space-between;
     align-items: center;

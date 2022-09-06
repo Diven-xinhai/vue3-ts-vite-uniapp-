@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-09-05 16:34:02
  * @LastEditors: YeKe
- * @LastEditTime: 2022-09-05 17:11:27
+ * @LastEditTime: 2022-09-06 11:05:10
  * @FilePath: \vue3-vite-uniapp\vite.config.ts
  */
 import { defineConfig } from 'vite'

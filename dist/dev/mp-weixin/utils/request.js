@@ -1,17 +1,19 @@
 "use strict";
 var common_vendor = require("../common/vendor.js");
 var config_app = require("../config/app.js");
-function baseRequest(url, method, data, { noAuth = false, noVerify = false }, params) {
+function baseRequest(url, method, data, { noAuth = false, noVerify = false, isLoading = true, loadingMsg = "\u6B63\u5728\u52A0\u8F7D\u4E2D..." }, params) {
   const Url = config_app.HTTP_REQUEST_URL;
   let header = JSON.parse(JSON.stringify(config_app.HEADER));
   if (params != void 0) {
     header = config_app.HEADERPARAMS;
   }
   return new Promise((reslove, reject) => {
-    common_vendor.index.showLoading({
-      title: "\u52A0\u8F7D\u4E2D",
-      mask: true
-    });
+    if (isLoading) {
+      common_vendor.index.showLoading({
+        title: loadingMsg,
+        mask: true
+      });
+    }
     common_vendor.index.request({
       url: Url + url,
       method: method || "GET",

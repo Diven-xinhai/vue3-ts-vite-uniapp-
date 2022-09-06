@@ -46,6 +46,7 @@
     "@dcloudio/uni-mp-toutiao": "3.0.0-alpha-3050320220729001",
     "@dcloudio/uni-mp-weixin": "3.0.0-alpha-3050320220729001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3050320220729001",
+    "@dcloudio/uni-ui": "^1.4.20",
     "@typescript-eslint/eslint-plugin": "^5.36.1",
     "@typescript-eslint/parser": "^5.36.1",
     "@vue/eslint-config-prettier": "^7.0.0",

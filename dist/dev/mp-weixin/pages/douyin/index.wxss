@@ -23,15 +23,28 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.index.data-v-c355884a {
-  padding: 25rpx;
+.water-mater {
+  padding: 20rpx 20rpx 0 20rpx;
 }
-.index .tab-list.data-v-c355884a {
-  width: 25%;
-  padding: 25rpx;
-  border-radius: 15rpx;
-  box-shadow: 0 0 10rpx #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.water-mater .title {
+  font-size: 25rpx;
+  margin-bottom: 10rpx;
+}
+.water-mater .msg {
+  width: 100%;
+  font-size: 28rpx;
+  border: 1px solid #ddd;
+  padding: 20rpx;
+  box-sizing: border-box;
+  margin: 0 auto 20rpx auto;
+  border-radius: 10rpx;
+}
+.water-mater .start-parsing-btn {
+  background-color: #007aff;
+  font-size: 28rpx;
+  padding: 5rpx;
+  margin-bottom: 25rpx;
+}
+.water-mater .img-list .img-item {
+  width: 50%;
 }

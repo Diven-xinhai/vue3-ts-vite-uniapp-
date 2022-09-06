@@ -1,7 +1,7 @@
 /*
  * @Date: 2022-09-05 16:51:40
  * @LastEditors: YeKe
- * @LastEditTime: 2022-09-05 17:03:05
+ * @LastEditTime: 2022-09-06 15:45:46
  * @FilePath: \vue3-vite-uniapp\src\utils\request.ts
  */
 /* eslint-disable @typescript-eslint/ban-types */
@@ -17,7 +17,7 @@ function baseRequest(
   url: string,
   method: RequestOptionsMethod,
   data: any,
-  { noAuth = false, noVerify = false }: any,
+  { noAuth = false, noVerify = false, isLoading = true, loadingMsg = '正在加载中...' }: any,
   params: unknown
 ) {
   //   const store = useStore()
@@ -37,10 +37,12 @@ function baseRequest(
   //   }
 
   return new Promise((reslove, reject) => {
-    uni.showLoading({
-      title: '加载中',
-      mask: true,
-    })
+    if (isLoading) {
+      uni.showLoading({
+        title: loadingMsg,
+        mask: true,
+      })
+    }
     uni.request({
       url: Url + url,
       method: method || 'GET',
