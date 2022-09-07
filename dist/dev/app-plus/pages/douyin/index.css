@@ -23,39 +23,39 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.water-mater.data-v-c355884a {
-  padding: 20rpx 20rpx 0 20rpx;
+.water-mater[data-v-c355884a] {
+  padding: 0.625rem 0.625rem 0 0.625rem;
 }
-.water-mater .title.data-v-c355884a {
-  font-size: 25rpx;
-  margin-bottom: 10rpx;
+.water-mater .title[data-v-c355884a] {
+  font-size: 0.78125rem;
+  margin-bottom: 0.3125rem;
 }
-.water-mater .msg.data-v-c355884a {
+.water-mater .msg[data-v-c355884a] {
   width: 100%;
-  font-size: 28rpx;
+  font-size: 0.875rem;
   border: 1px solid #ddd;
-  padding: 20rpx;
+  padding: 0.625rem;
   box-sizing: border-box;
-  margin: 0 auto 20rpx auto;
-  border-radius: 10rpx;
+  margin: 0 auto 0.625rem auto;
+  border-radius: 0.3125rem;
 }
-.water-mater .btn-box.data-v-c355884a {
+.water-mater .btn-box[data-v-c355884a] {
   display: flex;
   justify-content: space-between;
 }
-.water-mater .btn-box .btn-primary.data-v-c355884a {
+.water-mater .btn-box .btn-primary[data-v-c355884a] {
   width: 45%;
 }
-.water-mater .btn-primary.data-v-c355884a {
+.water-mater .btn-primary[data-v-c355884a] {
   background-color: #007aff;
-  font-size: 28rpx;
-  padding: 5rpx;
-  margin-bottom: 25rpx;
+  font-size: 0.875rem;
+  padding: 0.15625rem;
+  margin-bottom: 0.78125rem;
 }
-.water-mater .color-fff.data-v-c355884a {
+.water-mater .color-fff[data-v-c355884a] {
   color: #333;
   background-color: #fff;
 }
-.water-mater .img-list .img-item.data-v-c355884a {
+.water-mater .img-list .img-item[data-v-c355884a] {
   width: 50%;
 }

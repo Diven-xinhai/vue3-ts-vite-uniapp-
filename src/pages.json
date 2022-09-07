@@ -11,13 +11,19 @@
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "去水印小工具"
       }
     },
     {
       "path": "pages/douyin/index",
       "style": {
         "navigationBarTitleText": "抖音去水印"
+      }
+    },
+    {
+      "path": "pages/download/index",
+      "style": {
+        "navigationBarTitleText": "解析结果"
       }
     }
   ],
