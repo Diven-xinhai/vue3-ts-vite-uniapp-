@@ -1,3 +1,9 @@
+var __defProp = Object.defineProperty;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField = (obj, key, value) => {
+  __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+  return value;
+};
 if (typeof Promise !== "undefined" && !Promise.prototype.finally) {
   Promise.prototype.finally = function(callback) {
     const promise = this.constructor;
@@ -189,6 +195,22 @@ if (uni.restoreGlobal) {
     __name: "index",
     setup(__props) {
       const message = vue.ref();
+      class Animation {
+        getPos() {
+          return { x: 100, y: 200 };
+        }
+      }
+      class Tank extends Animation {
+        constructor() {
+          super(...arguments);
+          __publicField(this, "name", "\u654C\u65B9\u5766\u514B");
+        }
+        move() {
+          formatAppLog("log", "at pages/douyin/index.vue:31", `${this.name}\u79FB\u52A8`);
+        }
+      }
+      const tk = new Tank();
+      tk.move();
       const startParsing = () => {
         if (!message.value) {
           uni.showToast({
@@ -213,7 +235,7 @@ if (uni.restoreGlobal) {
             title: "\u89E3\u6790\u6210\u529F\uFF01",
             mask: true
           });
-          formatAppLog("log", "at pages/douyin/index.vue:48", res.data);
+          formatAppLog("log", "at pages/douyin/index.vue:66", res.data);
           uni.navigateTo({
             url: `/pages/download/index?data=${encodeURIComponent(JSON.stringify(res.data))}`
           });

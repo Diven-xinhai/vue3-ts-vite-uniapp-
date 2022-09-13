@@ -1,12 +1,17 @@
 # vue3-vite-uniapp
 
-## Project setup
-
 ## vue3-vite-ts-uniapp 开发模板
 
-## 采用 cli 创建项目
+### 介绍
 
-## 项目用到了 vue3、vite、ts、eslint
+- 此项目是抖音去水印的前端项目，微信小程序端为主
+- 涉及功能：图片和视频渲染、下载、获取粘贴板基本功能
+
+### 技术栈
+
+- 采用 vue-cli 构建 uniapp
+- 用到了 vue3、vite、ts、eslint
+- 可以作为 vue3-vite-ts-uniapp 开发模板
 
 ```
 npm install
